@@ -20,7 +20,7 @@ public class ErrorValidationTest extends BaseTest {
     @Test(groups = {"ErrorHandling"},retryAnalyzer = Retry.class)
     public void loginErrorValidation() throws IOException,InterruptedException {
         String productName = "ZARA COAT 3";
-        ProductCatalogue productCatalogue = landingPage.loginApplication("varsharane99@gmail.com", "Tes@123");
+        ProductCatalogue productCatalogue = landingPage.loginApplication("varsharane99@gmail.com", "Tet@123");
         Assert.assertEquals("Incorrect email or password.",landingPage.getErrorMessage());
 
     }
